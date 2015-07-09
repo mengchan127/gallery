@@ -1,0 +1,202 @@
+/*博文部分*/
+.blog-list{
+	width: 710px;
+	float: left;
+}
+.labels-wrap{
+	position: absolute; 
+	left:-50px;
+	top:20px;
+}
+.labels{
+	width: 50px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	color: #FFF;
+	text-align: center;
+	font-family: Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+}
+.blog{
+	width: 670px;
+	background: #FFF;
+	margin-bottom: 10px;
+	padding: 15px 20px;
+	position: relative;
+}
+.blog h3{
+	margin:5px 0;
+	color:#A660B7;
+	font-size: 16px;
+	font-weight: bold;
+}
+.blog h4{
+	margin:10px 0;
+	color: #666;
+	font-size: 12px;
+	font-weight: bold;
+}
+.blog p{
+	text-indent: 2em;
+	line-height: 1.7;
+}
+.edit-info{
+	height: 20px;
+	line-height: 20px;
+	color: #999999;
+	text-align: right;
+	margin-top: 20px;
+}
+
+/*页码导航*/
+.page-nav{
+	clear: both;
+	width: 710px;
+	padding: 0;
+	margin-bottom: 200px;
+}
+.page-nav ul{
+	width: 550px;
+	margin:0 auto;
+	overflow: hidden;
+	margin-top: 15px;
+}
+.page-nav li{
+	float: left;
+	height: 35px;
+	line-height: 35px;
+	background: #FFF;
+	margin:0 5px;
+}
+.page-nav a{
+	color:#000;
+	display: block;
+	padding: 0 15px;
+}
+.page-nav a:hover{
+	color: #FFF;
+	background: #A660B7;
+}
+#noclick{ color:#666; }
+#noclick:hover{	background: #FFF; }
+
+/*侧边栏*/
+.side-wrap{
+	width: 260px;
+	float: right;
+}
+/*搜索框*/
+.search-wrap{
+	height: 80px;
+	background: #FFF;
+	overflow: hidden;
+}
+form{
+	width: 218px;
+	margin:20px;
+}
+.search-wrap input{
+	float: left;
+	border: 1px solid #DDDDDD;
+}
+.search-text{
+	width: 120px;
+	height: 36px;
+	background: url(../img/search.png) no-repeat;
+	padding-left: 45px;
+	font-size: 14px;
+	line-height: 36px;
+}
+.search-btn{
+	width: 50px;
+	height: 40px;
+	line-height: 40px;
+	color: #FFF;
+	background: #DDDDDD;
+	display: block;
+	text-align: center;
+	font-size: 23px;
+	font-family: Arial;
+	cursor: pointer;
+}
+/*分类栏*/
+.sort-wrap{ height:200px; margin-top: 12px;}
+.sort-wrap ul{ border-top:1px solid #DDDDDD; }
+.sort-wrap li{
+	height: 48px;
+	line-height: 48px;
+	background: #FFF;
+	border-bottom: 1px solid #DDDDDD;
+}
+.sort-wrap a{
+	display: block;
+	color: #666666;
+	background: #FFF;
+	font-size: 16px;
+	border-left: 5px solid #DFC6E6;
+	padding-left:20px;
+}
+.sort-wrap a:hover, a:active{ border-left: 5px solid #522A5c; }
+
+/*日历*/
+.calendar{
+	background: #FFF;
+	margin-top: 10px;
+	padding-top: 20px;
+	padding-bottom: 25px;
+}
+.calendar table{
+	border-collapse: collapse;
+	border-spacing: 0;
+	text-align: center;
+	color:#999;
+	margin:0 auto;
+}
+.calendar caption{
+	text-align: center;
+	font-weight: bold;
+	color: #773C88;
+	letter-spacing: 3px;
+	font-size: 14px;
+}
+.calendar caption a{ color: #773C88; padding: 5px 8px;}
+.calendar caption a:hover{ background-color: #773C88; color:#FFF;}
+.calendar tr{
+	border-bottom: 1px solid #DDDDDD;
+	height: 35px;
+}
+.calendar th{ font-weight: normal; }
+.calendar td{
+	width: 31px;
+	text-align: center;
+}
+.calendar td a{
+	width: 28px;
+	height: 20px;
+	line-height: 20px;
+	display: block;
+	color:#999;
+}
+.calendar td a:hover{
+	color: #FFF;
+	background: #773C88;
+}
+/*标签云*/
+.tags-wrap{
+	height: 160px;
+	padding: 10px 15px;
+	background: #FFF;
+	margin-top: 15px;
+	color:#773C88;
+	font-family: Arial;
+	overflow: hidden;
+}
+.tags-wrap h3{
+	font-family: Arial;
+	color: #666;
+}
+.tags{ margin-right: -10px; margin-top: 10px;}
+.tags span{
+	margin-right: 5px;
+	cursor: pointer;
+}

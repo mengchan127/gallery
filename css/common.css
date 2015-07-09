@@ -1,0 +1,120 @@
+html,body{
+	padding: 0;
+	margin: 0;
+	font-family: "宋体";
+	font-size: 12px;
+	background: #EEEEEE;
+}
+@media screen and (max-width: 980px){
+	.container{
+		width: 980px;
+	}
+	#github-icon{
+		display: none;
+	}
+}
+a{ text-decoration: none; outline: none;}
+li{ list-style: none; }
+input{ outline: none; }
+ul,ol,li{ padding: 0; margin:0;}
+h1,h2,h3,h4,p{ margin:0; font-weight: normal;}
+
+/*header*/
+.header{
+	width: 100%;
+	height: 80px;
+	line-height: 80px;
+	background-color: #522A5C;
+	overflow: hidden;
+	position: relative;
+}
+#github-icon{
+width: 30px;
+height: 34px;
+background-image: url(../img/icon-github.png);
+float: right;
+margin-right: 10px;
+margin-top: 46px;
+cursor: pointer;
+}
+.topnav{
+	width: 980px;
+	margin: 0 auto;
+}
+.topnav h1{
+	color: #FFF;
+	font-family: Arial;
+	margin-top: 15px;
+	float: left;
+}
+.topnav ul{
+	float: right; 
+	height: 50px;
+	margin-top: 25px;
+}
+.topnav li{
+	float: left;
+	font:14px;
+	margin-left: 28px;
+}
+.topnav a{
+	cursor: pointer;
+	color: #fff;
+}
+.topnav a:hover{ color: #FCADAD; }
+
+/*中间主体部分*/
+.wrapper{
+	width: 980px;
+	margin:0 auto;
+	padding-top: 20px;
+}
+
+/*footer*/
+.footer{
+	width: 100%;
+	height: 395px;
+	background: #000;
+	color:#FFF;
+	overflow: hidden;
+}
+.footer-ul{
+	width: 200px;
+	height: 35px;
+	margin:0 auto;
+}
+.footer-li{
+	float: left;
+	width: 50px;
+	height: 35px;
+	line-height: 35px;
+}
+.navs{
+	width: 980px;
+	height: 280px;
+	margin:0 auto;
+	margin-top: 12px;
+}
+.navs ul{
+	float: left;
+	margin-right: 130px;
+}
+.navs li{
+	height: 20px;
+	line-height: 20px;
+}
+.footer a{	color: #FFF; }
+.navs a:hover{ text-decoration:underline; }
+.copyright{
+	width: 980px;
+	height: 80px;
+	margin:0 auto;
+	text-align: center;
+}
+#github-icon1{
+	width: 30px;
+	height: 34px;
+	background-image: url(../img/icon-github.png);
+	margin:0 auto;
+	margin-top: 19px;
+}

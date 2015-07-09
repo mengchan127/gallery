@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>首页</title>
+	<title>关于</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<link rel="stylesheet" href="./css/common.css">
-	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./css/about.css">
 </head>
 <body>
 	<div class="container">
@@ -21,58 +21,74 @@
 					<li><a href="about.html">关于</a></li>
 				</ul>
 			</div>
-		</div>
+		</div> <!-- header end -->
 
-	
-		<!-- banner -->
-		<div class="banner">
-			<img src="./img/banner-bg.jpg">
-			<div class="article-wrap">
-				<div class="article">
-					<div class="art-title">标题1</div>
-					<div class="art-content">这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- 三列等高 -->
-		<div class="content-wrap">
-			<div class="content">
-				<ul>
-					<li>
-						<img src="./img/1.jpg">
-						<div class="description">
-							<p>这里是正文，12px字体大小，行高170%。整块白色的底宽为320px，图片大小为300*180。</p>
-							<p>文字距离图片下方间隔为15px,距离白色底左右两侧的内边距为30px,距离白色底块下方的内边距为25px。</p>
-							<p>三个白色模块之间的内边距为10px，距离上面banner图片的间隔为10px。</p>
+		<!-- 中间主体部分 -->
+		<div class="wrapper">
+			<ul>
+				<li>
+					<div class="head-image">
+						<img src="./img/head.jpg">
+					</div>
+					<div style="margin-top: -50px;">
+						<div class="titles" style="height:160px;"><h2>NAME</h2></div>
+						<div class="details" style="height:175px;">
+							<p style="text-indent: 2em;">这是一段自我介绍，这是一段自我介绍，这是一段自我介绍，这是一段自我介绍，这是一段自我介绍，这是一段自我介绍，这是一段自我介绍，这是一段自我介绍，这是一段自我介绍，这是一段自我介绍，这是一段自我介绍……</p>
 						</div>
-					</li>
-					<li>
-						<img src="./img/2.jpg">
-						<div class="description">
-							<p>这三块白色模块的高度需要保持一致，且自适应于文字内容高度。</p>
+					</div>
+				</li>
+				<li>
+					<div class="other-image">
+						<img src="./img/phone.jpg" style="width:100px;height:100px;">
+					</div>
+					<div class="titles" style="height:110px;"><h2>联系方式</h2></div>
+					<div class="details" style="height:125px;">
+						<p>联系方式1：xxxxxxxxxxx</p>
+						<p>联系方式2：xxxxxxxxxxx</p>
+						<p>联系方式3：xxxxxxxxxxx</p>
+					</div>
+				</li>
+				<li>
+					<div class="other-image">
+						<img src="./img/school.jpg" style="width:100px;height:100px;">
+					</div>
+					<div class="titles" style="height:250px;"><h2>教育经历</h2></div>
+					<div class="details" style="height:265px;">
+						<div class="detail-item">
+							<div class="year"><span>2006</span></div>
+							<p>某某某某高中</p>
 						</div>
-					</li>
-					<li>
-						<img src="./img/3.jpg">
-						<div class="description">
-							<p>图片和文字内容请自定义。</p>
-							<p>这里是内容，这里是内容，这里是内容，这里是内容，这里是内容，这里是内容，这里是内容，这里是内容，这里是内容，这里是内容，这里是内容，这里是内容，</p>
+						<div class="detail-item">
+							<div class="year"><span>2009</span></div>
+							<p>某某某某大学</p>
+							<p>某某学院&nbsp;某某专业</p>
 						</div>
-					</li>
-				</ul>
-			</div>
-		</div>
-
-		<!-- 博主简介 -->
-		<div class="intro-wrap">
-			<div class="headimg">
-				<img src="./img/head.jpg">
-			</div>
-			<h1>Hi, I'm Cindy</h1>
-			<div class="self-intro">
-				这一段很长的自我介绍，这一段很长的自我介绍，这一段很长的自我介绍，这一段很长的自我介绍，这一段很长的自我介绍，这一段很长的自我介绍，这一段很长的自我介绍，这一段很长的自我介绍，这一段很长的自我介绍，这一段很长的自我介绍，这一段很长的自我介绍，这一段很长的自我介绍，这一段很长的自我介绍，这一段很长的自我介绍，这一段很长的自我介绍，这一段很长的自我介绍
-			</div>
+						<div class="detail-item">
+							<div class="year"><span>2013</span></div>
+							<p>某某某某大学</p>
+							<p>某实验室&nbsp;某某专业&nbsp;某某方向</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="other-image">
+						<img src="./img/company.jpg" style="width:100px;height:100px;">
+					</div>
+					<div class="titles" style="height:400px;"><h2>实习经历</h2></div>
+					<div class="details" style="height:415px;">
+						<div class="detail-item">
+							<div class="year"><span>2014</span></div>
+							<p>某某公司</p>
+							<p>主要工作内容描述</p>
+						</div>
+						<div class="detail-item">
+							<div class="year"><span>2015</span></div>
+							<p>某某公司</p>
+							<p>主要工作内容描述</p>
+						</div>
+					</div>
+				</li>
+			</ul>
 		</div>
 
 		<!-- footer -->
@@ -135,6 +151,5 @@
 			</div>
 		</div>
 	</div>
-	
 </body>
 </html>

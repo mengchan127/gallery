@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>作品</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/gallery.css">
+</head>
+<body>
+	<div class="container">
+		<!-- 头部导航 -->
+		<div class="header">
+			<a href="https://github.com/" target="_blank"><div id="github-icon"></div></a>
+			<div class="topnav">
+				<h1>YourLOGO</h1>
+				<ul>
+					<li><a href="index.html">首页</a></li>
+					<li><a href="blog.html">文章</a></li>
+					<li><a href="gallery.html">作品</a></li>
+					<li><a href="about.html">关于</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- 中间主体部分 -->
+		<div class="wrapper">
+			<!-- 主体部分 -->
+			<div class="main-wrap">
+				<!-- Tab菜单 -->
+				<div class="tab-wrap">
+					<ul>
+						<li style="border-left: 0;"><a href="#" style="border-top:5px solid #522A5C;border-bottom: 1px solid #fff;" id="all">ALL</a></li>
+						<li><a href="#" id="js">JavaScript Util Functions</a></li>
+						<li><a href="#" id="ui">UI Components</a></li>
+						<li><a href="#" id="sr">Framework</a></li>
+						<li><a href="#" id="app">Applications</a></li>
+					</ul>
+				</div>
+				<!-- 瀑布流 -->
+				<div class="waterfall">
+					<!-- 左栏 -->
+					<div class="waterfall-left">
+						<div id="l-img1">
+							<div class="summary color-j">
+								<div class="circle">J</div>
+								<div class="content">
+									<h3>这里是标题</h3>
+									<p>这里是内容啊内容啊内容啊内容啊内容</p>
+								</div>
+							</div>
+						</div>
+						<!-- 左左栏 -->
+						<div class="waterfall-left-left">
+							<div id="l-l-img1">
+								<div class="summary color-a">
+									<div class="circle">A</div>
+									<div class="content">
+										<h3>这里是标题</h3>
+										<p>这里是内容啊内容</p>
+									</div>
+								</div>
+							</div>
+							<div id="l-l-img2">
+								<div class="summary color-j">
+									<div class="circle">J</div>
+									<div class="content">
+										<h3>这里是标题</h3>
+										<p>这里是内容啊</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 左右栏 -->
+						<div class="waterfall-left-right">
+							<div id="l-r-img1">
+								<div class="summary color-f">
+									<div class="circle">F</div>
+									<div class="content">
+										<h3>这里是标题</h3>
+										<p>这里是内容啊内容啊内容啊内容啊</p>
+									</div>
+								</div>
+							</div>
+							<div id="l-r-img2">
+								<div class="summary color-u">
+									<div class="circle">U</div>
+									<div class="content">
+										<h3>这里是标题</h3>
+										<p>这里是内容啊这里是内容啊</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 右栏 -->
+					<div class="waterfall-right">
+						<!-- 右左栏 -->
+						<div class="waterfall-right-left">
+							<div id="r-l-img1">
+								<div class="summary color-u">
+									<div class="circle">U</div>
+									<div class="content">
+										<h3>这里是标题</h3>
+										<p>这里是内容啊内容啊内容啊内容啊</p>
+									</div>
+								</div>
+							</div>
+							<div id="r-l-img2">
+								<div class="summary color-j">
+									<div class="circle">J</div>
+									<div class="content">
+										<h3>这里是标题</h3>
+										<p>这里是内容啊内容啊内容啊内容啊</p>
+									</div>
+								</div>
+							</div>
+							<div id="r-l-img3">
+								<div class="summary color-a">
+									<div class="circle">A</div>
+									<div class="content">
+										<h3>这里是标题</h3>
+										<p>这里是内容啊</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 右右栏 -->
+						<div class="waterfall-right-right">
+							<div id="r-r-img1">
+								<div class="summary color-a">
+									<div class="circle">A</div>
+									<div class="content">
+										<h3>这里是标题</h3>
+										<p>这里是内容啊内容啊内容啊内容啊</p>
+									</div>
+								</div>
+							</div>
+							<div id="r-r-img2">
+								<div class="summary color-f">
+									<div class="circle">F</div>
+									<div class="content">
+										<h3>这里是标题</h3>
+										<p>这里是内容啊内容啊内容啊内容啊</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- seemore -->
+				<div class="seemore">
+					<a href="#"><img src="./img/see-more.png">点击查看更多</a>
+				</div>
+			</div>
+
+			<!-- 侧边栏 -->
+			<div class="sidebar-wrap">
+				<!-- 搜索框 -->
+				<div class="search-wrap">
+					<form>
+						<input type="text" placeholder="Keywords" class="search-text">
+						<input type="submit" value="GO" class="search-btn">
+					</form>
+				</div>
+				<!-- 排行榜 -->
+				<div class="ranking-wrap">
+					<h3>人气排行榜</h3>
+					<ol>
+						<li>
+							<div class="order">1</div>
+							<div class="progress">
+								<div class="progress-bar"></div>
+							</div>
+							<div><a href="#">ui.tree</a></div>
+						</li>
+						<li>
+							<div class="order">2</div>
+							<div class="progress">
+								<div class="progress-bar" style="width:85%"></div>
+							</div>
+							<div><a href="#">util.trim</a></div>
+						</li>
+						<li>
+							<div class="order">3</div>
+							<div class="progress">
+								<div class="progress-bar" style="width:60%"></div>
+							</div>
+							<div><a href="#">app.todo</a></div>
+						</li>
+						<li>
+							<div class="order">4</div>
+							<div class="progress">
+								<div class="progress-bar" style="width:45%"></div>
+							</div>
+							<div ><a href="#">ui.tab</a></div>
+						</li>
+						<li>
+							<div class="order">5</div>
+							<div class="progress">
+								<div class="progress-bar" style="width:30%"></div>
+							</div>
+							<div><a href="#">util.addCalss</a></div>
+						</li>
+					</ol>
+				</div>
+			</div> <!-- sidebar end -->
+		</div> <!-- container end -->
+
+		<!-- footer -->
+		<div class="footer">
+			<ul class="footer-ul">
+				<li class="footer-li">主页</li>
+				<li class="footer-li">文章</li>
+				<li class="footer-li">作品</li>
+				<li class="footer-li">关于</li>
+			</ul>
+			<hr style="background:#333;border:0;height:1px;margin:0">
+
+			<div class="navs">
+				<ul>
+					<li style="height:60px;line-height: 60px;margin-top:5px;margin-bottom: 5px;">学习资料</li>
+					<li><a href="#">LINK</a></li>
+					<li><a href="#">Hover时样式</a></li>
+					<li><a href="#">LINK</a></li>
+					<li><a href="#">LINK</a></li>
+					<li><a href="#">LINK</a></li>
+					<li><a href="#">LINK</a></li>
+				</ul>
+
+				<ul>
+					<li style="height:60px;line-height: 60px;margin-top:5px;margin-bottom: 5px;">友情链接</li>
+					<li><a href="#">LINK</a></li>
+					<li><a href="#">Hover时样式</a></li>
+					<li><a href="#">LINK</a></li>
+					<li><a href="#">LINK</a></li>
+				</ul>
+				<ul>
+					<li style="height:60px;line-height: 60px;margin-top:5px;margin-bottom: 5px;">学习资料</li>
+					<li><a href="#">LINK</a></li>
+					<li><a href="#">Hover时样式</a></li>
+					<li><a href="#">LINK</a></li>
+					<li><a href="#">LINK</a></li>
+					<li><a href="#">LINK</a></li>
+					<li><a href="#">LINK</a></li>
+				</ul>
+				<ul>
+					<li style="height:60px;line-height: 60px;margin-top:5px;margin-bottom: 5px;">学习资料</li>
+					<li><a href="#">LINK</a></li>
+					<li><a href="#">Hover时样式</a></li>
+					<li><a href="#">LINK</a></li>
+					<li><a href="#">LINK</a></li>
+					<li><a href="#">LINK</a></li>
+					<li><a href="#">LINK</a></li>
+				</ul>
+				<ul>
+					<li style="height:70px;line-height: 70px;margin-top:5px;margin-bottom: 5px;">友情链接</li>
+					<li><a href="#">LINK</a></li>
+					<li><a href="#">Hover时样式</a></li>
+					<li><a href="#">LINK</a></li>
+					<li><a href="#">LINK</a></li>
+				</ul>
+			</div>
+			<div class="copyright">
+				<p>版权信息</p>
+				<div id="github-icon1"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

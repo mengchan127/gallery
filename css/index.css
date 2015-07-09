@@ -1,0 +1,99 @@
+/*banner*/
+.banner{ height:525px; }
+.banner img{
+	width:100%;
+	height:605px;
+	margin-top:-80px;
+	vertical-align: top;
+}
+.article-wrap{
+	width: 980px;
+	margin:0 auto;
+	position: relative; /*通过层布局让banner图片置底*/
+}
+.article{
+	width: 360px;
+	padding: 10px 10px 30px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	background: -moz-linear-gradient(top,  rgba(255,255,255,0.3) 0%, rgba(255,255,255,0.1) 75%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.3)), color-stop(75%,rgba(255,255,255,0.1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,0.3) 0%,rgba(255,255,255,0.1) 75%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,255,255,0.3) 0%,rgba(255,255,255,0.1) 75%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,255,255,0.3) 0%,rgba(255,255,255,0.1) 75%,rgba(255,255,255,0) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(255,255,255,0.3) 0%,rgba(255,255,255,0.1) 75%,rgba(255,255,255,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+	color:#FFF;
+}
+.art-title{
+	font-size: 14px;
+	margin-bottom: 12px;
+	text-align: right;
+}
+.art-content{
+	font-size: 12px;
+	line-height: 1.5;
+	text-indent: 2em;
+}
+
+/*三列等高*/
+.content-wrap{ height: 480px;}
+.content{
+	width: 980px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.content li{
+	float: left;
+	width: 320px;
+	background: #FFF;
+	text-align: center;
+	padding-top: 10px;
+	margin-top:10px;
+	padding-bottom: 300px; /*实现三列等高*/
+	margin-bottom: -300px;
+}
+.content li~li{ margin-left: 10px; }
+.content img{
+	width: 300px;
+	height: 180px;
+}
+.description{ padding: 10px 30px 25px; }
+.description p{
+	text-align: left;
+	text-indent: 2em;
+	line-height: 1.7;
+}
+
+/*博主简介*/
+.intro-wrap{
+	height: 520px;
+	background-color: #FFF;
+}
+.headimg{
+	margin:0 auto;
+	width: 160px;
+	height: 160px;
+	border-radius: 50%;
+	overflow: hidden;
+	position: relative;
+	top:-50px;
+}
+.headimg img{
+	width: 160px;
+	height: 215px;
+}
+.intro-wrap h1{
+	font-family: Century Gothic;
+	font-size: 20px;
+	text-align: center;
+}
+.self-intro{
+	width: 600px;
+	margin:0 auto;
+	margin-top: 50px;
+	font-size: 14px;
+	line-height: 1.7;
+	text-indent: 2em;
+}
