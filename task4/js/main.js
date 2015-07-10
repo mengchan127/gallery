@@ -5,6 +5,8 @@ window.onload = function () {
 	var mainer = document.getElementById('mainer');
 	var goback = document.getElementById('goback');
 
+	initLocalStorage();
+
 	// 分类列表
 	var sorts = getData('sorts');
 	// 当前分类下的任务列表
@@ -12,8 +14,6 @@ window.onload = function () {
 	// 当前分类名
 	var curSort;
 	// window.localStorage.clear();
-	
-	initLocalStorage();
 
 	mainer.innerHTML = '<ul>';
 	for (var i = 0, len = sorts.length; i < len; i++) {
