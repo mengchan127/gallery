@@ -1,0 +1,328 @@
+/*2015.5.7*/
+/*有一个体验不好的地方是：鼠标划过“默认分类”后面也会显示提示删除的图片，暂没能解决*/
+html,body{
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	font-family: "微软雅黑";
+	height: 100%;
+}
+a{ text-decoration: none; outline: none;}
+li{ list-style: none; }
+input, textarea, button{ outline: none; }
+ul,ol,dl,li{ padding: 0; margin:0;}
+h1,h2,h3,h4,p{ margin:0; font-weight: normal;}
+
+.container{ height: 100%; overflow: hidden;}
+@media screen and (max-width: 980px) {
+	.container{ width: 980px; }
+}
+@media screen and (max-height: 620px) {
+	.container{ height: 620px; }
+}
+
+.header{
+	height: 60px;
+	line-height: 60px;
+	background: #DDD;
+	border-bottom: 1px solid #CECECE;
+	padding-left: 10px;
+	color: #9A9A9A;
+}
+/*分类列表*/
+.sortbar{
+	width: 220px;
+	height: 100%;
+	background: #F2F2F2;
+	float: left;
+	position: relative;
+}
+.sortbar h3{ 
+	font-size: 16px;
+	height: 30px;
+	line-height: 30px; 
+	padding-left: 10px;
+}
+#all-task{ 
+	cursor: default;
+	margin-top: 25px;
+}
+#sort-list{ 
+	margin-top:10px;
+	cursor: pointer;
+}
+#sort-list:hover{ background-color: #FFF; }
+/*如果高度超过范围该怎么解决呢，暂时用加滚动条的办法，不过不是很好*/
+#list-wrap{
+	height:80%;
+	overflow-y: auto;
+}
+#list-wrap dl{ margin: 5px 0; }
+#list-wrap dt{
+	font-size: 14px;
+	height: 26px;
+	line-height: 26px;
+	background: url(../img/folder-close.png) no-repeat left center;
+	padding-left: 25px;
+	cursor: default;
+	margin-left: 10px;
+}
+#list-wrap dt:hover{ 
+	background: url(../img/folder-close.png) no-repeat left center,
+	            url(../img/del-big.png) no-repeat 190px 50%;
+	background-color: #FAFAEE; 
+} 
+/*当前选中的大分类*/
+#list-wrap .cur-class{
+	background: url(../img/folder-open.png) no-repeat left center;
+	background-color: #FAFAEE;
+}
+#list-wrap .cur-class:hover{
+	background: url(../img/folder-open.png) no-repeat left center,
+	            url(../img/del-big.png) no-repeat 190px 50%;
+	background-color: #FAFAEE; 
+}
+#list-wrap dd{
+	height: 22px;
+	line-height: 22px;
+	background: url(../img/file.png) no-repeat left center;
+	padding-left: 20px;
+	cursor: default;
+	margin-top: 5px;
+	display: none;
+}
+#list-wrap .curSubclass{
+	background: url(../img/file.png) no-repeat left center;
+	background-color: #FFF; 
+}
+#list-wrap dd:hover{ 
+	background: url(../img/file.png) no-repeat left center,
+	            url(../img/del-big.png) no-repeat 160px 50%;
+	background-color: #FFF; 
+}
+.rmclass{
+	width: 25px;
+	height: 22px;
+	float: right;
+	cursor: pointer;
+}
+
+.changebg{
+	background: #FFF;
+}
+.sortbar-footer{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	border-top: 1px solid #CECECE;
+	position: absolute;
+	bottom: 60px; /*待改*/
+	background: url(../img/add-big.png) no-repeat;
+	background-position: 20px 50%;
+	cursor: pointer;
+	background-color: #EEE;
+}
+.sortbar-footer p{ margin-left: 40px; }
+
+/*任务列表*/
+.taskbar{
+	width: 238px;
+	height: 100%;
+	border-left: 1px solid #CECECE;
+	border-right: 1px solid #CECECE;
+	float: left;
+	position: relative;
+}
+.taskbar-header{
+	height: 40px;
+	line-height: 40px;
+	background-color: #EEE;
+	border-bottom: 1px solid #CECECE;
+}
+.taskbar-header span{
+	font-size: 14px;
+	padding: 2px 7px;
+	margin-left: 10px;
+	cursor: pointer;
+	border: 1px solid #EEE;
+}
+.taskbar-header span:hover{
+	font-weight: bold;
+}
+.taskbar-header .selected{
+	background-color: #FFF;
+	border: 1px solid #CECECE;
+}
+.taskbar-header .selected:hover{
+	background-color: #FFF;
+	border: 1px solid #CECECE;
+	font-weight: normal;
+}
+#taskbar-content{
+	height:90%;
+	overflow-y: auto;
+}
+#taskbar-content dl{
+	/*border: 1px solid red;*/
+	/*margin-bottom: 10px;*/
+}
+#taskbar-content dt{
+	height: 30px;
+	line-height: 30px;
+	background-color: #FAFAEE;
+	padding-left: 20px;
+	cursor: default;
+}
+#taskbar-content dd{
+	height: 25px;
+	line-height: 25px;
+	cursor: pointer;
+	margin: 0;
+	padding-left: 35px;
+}
+.done{ color: #25840E; }
+.choosed{ background-color: #F2F2F2; }
+#taskbar-content dd:hover{ font-weight: bold; }
+
+.taskbar-footer{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	border-top: 1px solid #CECECE;
+	position: absolute;
+	background: url(../img/add-big.png) no-repeat;
+	background-position: 20px 50%;
+	cursor: pointer;
+	background-color: #EEE;
+	bottom: 60px; /*待改*/
+}
+.taskbar-footer p{ margin-left: 40px; }
+
+/*主工作区*/
+.main{ margin-left: 460px;}
+/*显示任务内容*/
+.main-header{
+	height: 50px;
+	line-height: 50px;
+	background-color: #F2F2F2;
+	border-bottom: 1px solid #CECECE;
+	padding: 0 15px;
+	overflow: hidden;
+}
+.main-header h2{ float: left; }
+.main-header ul{ float: right; }
+.main-header li{
+	float: left;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	margin: 10px 10px 10px 0;
+}
+.finish{ 
+	background: url(../img/done.png) no-repeat center;}
+.edit{ background: url(../img/edit.png) no-repeat center; }
+.delete{ background: url(../img/del-small.png) no-repeat center; }
+.finish, .edit, .delete{ background-size: 20px 20px; }
+
+.main-date{
+	height: 50px;
+	line-height: 50px;
+	background-color: #FAFAEE;
+	border-bottom: 1px solid #CECECE;
+	padding-left: 14px;
+	font-size: 15px;
+}
+.main-content{
+	padding: 10px 15px;
+	font-size: 14px;
+	line-height: 1.7;
+}
+/*编辑任务内容*/
+.main-header p {
+	font-size: 15px;
+	float: left;
+}
+.tip{
+	color: red;
+	font-size: 12px;
+	/*display: none;*/
+}
+.main input{
+	width: 180px;
+	padding-left: 5px;
+	font-size: 14px;
+	height: 20px;
+	line-height: 20px;
+	font-family: "微软雅黑";
+}
+.main textarea{
+	width: 98%;
+	height: 400px;
+	font-family: "微软雅黑";
+	resize: none;
+	line-height: 1.7;
+	padding: 5px 10px;
+	display: block;
+	border: none;
+	overflow: hidden;
+}
+.main-content span{
+	float: right;
+	font-size: 16px;
+	margin-right: 10px;
+}
+
+/*浮层*/
+.float-layer{
+	width: 350px;
+	height: 220px;
+	border:1px solid #CECECE;
+	position: absolute;
+	z-index: 99;
+	background: #FFF;
+	/*left: 300px;*/
+	/*top: 200px;*/
+	text-align: center;
+	font-size: 14px;
+	display: none;
+}
+.float-layer-title{
+	height: 30px;
+	line-height: 30px;
+	text-align: left;
+	text-indent: 1em;
+	font-weight: bold;
+	font-size: 16px;
+	letter-spacing: 3px;
+	border-bottom: 1px solid #CECECE;
+	background: #EEE;
+	margin-bottom: 40px;
+	cursor: move;
+}
+.close{
+	width: 30px;
+	height: 30px;
+	float: right;
+	margin-right: 5px;
+	background: url(../img/del-small.png) no-repeat center;
+	background-size: 22px 22px;
+	cursor: pointer;
+}
+
+.float-layer input{ padding-left: 5px;}
+.float-layer button{
+	margin: 30px 15px;
+	cursor: pointer;
+	letter-spacing: 3px;
+}
+.mask{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 98;
+	top: 0;
+	left: 0;
+	background: #000;
+	opacity: 0.3; filter: Alpha(opacity=30);
+	display: none;
+}

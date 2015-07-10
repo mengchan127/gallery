@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>GTD Tools</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<!-- 顶部标题栏 -->
+		<div class="header">
+			<h1>GTD Tools</h1>
+		</div>
+		<!-- 分类侧边栏 -->
+		<div class="sortbar">
+			<h3 id="all-task">所有任务 (<span id="total-num"></span>)</h3>
+			<h3 id="sort-list">分类列表</h3>
+			<div id="list-wrap">
+				<dl>
+					<dt id="default" class="cur-class" data-state="open">默认分类 (<span id="default-num"></span>)</dt>
+				</dl>
+			</div>
+			<div class="sortbar-footer">
+				<p>新增分类</p>
+			</div>
+		</div>
+		<!-- 任务列表 -->
+		<div class="taskbar">
+			<div class="taskbar-header">
+				<span class="selected" id="all">所有</span>
+				<span id="undone">未完成</span>
+				<span id="done">已完成</span>
+			</div>
+			<!-- 任务展示区，用dl实现 -->
+			<div id="taskbar-content">
+			</div>
+			<div class="taskbar-footer">
+				<p>新增任务</p>
+			</div>
+		</div>
+		<!-- 主工作区 -->
+		<div class="main">
+			<!-- 显示任务内容 -->
+			<div id="show-task">
+				<div class="main-header">
+					<h2 id="task-title">任务名称</h2>
+					<ul>
+						<li class="finish" title="完成任务" id="finish-task"></li>
+						<li class="edit" title="修改任务" id="rewrite-task"></li>
+						<li class="delete" title="删除任务" id="remove-task"></li>
+					</ul>
+				</div>
+				<div class="main-date">
+					<p>完成日期：<span id="task-date"></span></p>
+				</div>
+				<div class="main-content" id="task-content"></div>
+			</div>
+			<!-- 编辑任务内容 -->
+			<div id="edit-task" style="display:none;">
+				<div class="main-header">
+				   <p>任务名称： 
+					   <input type="text" id="in-title" placeholder="不超过12个字">
+					   <div style="float: left; display: none; margin-left:5px;" id="tip1"><span class="tip" >不能超过12个字</span></div>
+					</p>
+				   
+					<ul>
+						<li class="finish" title="完成" id="finish-edit"></li>
+						<li class="delete" title="取消" id="cancel-edit"></li>
+					</ul>
+				</div>
+				<div class="main-date">
+					<p>完成日期： 
+						<input type="text" id="in-date" placeholder="格式：yyyy-mm-dd">
+						<div style="margin-left:5px;line-height: 20px;width:200px;position:relative;left:270px;top:-35px;display:none;" id="tip2"><span class="tip">格式错误，正确格式：yyyy-mm-dd</span></div>
+					</p>
+					
+				</div>
+				<div class="main-content">
+					<span class="tip" id="word-num" style="display: block; color: #666;">400</span>
+					<textarea id="in-content" placeholder="不超过400字"></textarea>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 浮层 -->
+	<div class="float-layer">
+		<div class="float-layer-title">
+			<span>提示</span><div class="close"></div>
+		</div>
+		<div id="float-layer-content">
+		</div>
+		<button type="reset" id="cancled">取消</button>
+		<button type="submit" id="confirmed">确定</button>
+	</div>
+	<!-- 遮罩 -->
+	<div class="mask"></div>
+
+	<script src="js/util.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

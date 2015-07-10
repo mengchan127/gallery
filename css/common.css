@@ -62,6 +62,7 @@ cursor: pointer;
 	color: #fff;
 }
 .topnav a:hover{ color: #FCADAD; }
+.topnav a:active{ color: #FCADAD; }
 
 /*中间主体部分*/
 .wrapper{

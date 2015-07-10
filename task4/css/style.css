@@ -1,0 +1,45 @@
+body{
+	margin: 0;
+}
+.header{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	background-color: #4D7AFF;
+	color: #FFF;
+	overflow: hidden;
+}
+
+ul,li{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.header li{ float: left;}
+
+#goback{
+	width: 50px;
+	padding: 8px 10px 5px;
+	font-size: 16px;
+}
+#title{
+	margin-left: 70px;
+	font-size: 22px;
+}
+.main li{
+	height: 45px;
+	line-height: 45px;
+	border-bottom: 1px solid #BBB;
+	padding-left: 15px;
+}
+#task-title, #task-date{
+	height: 45px;
+	line-height: 45px;
+	border-bottom: 1px solid #BBB;
+	padding-left: 15px;
+}
+#task-content{
+	padding: 10px 10px 0px 15px;
+	line-height: 1.5;
+	text-indent: 2em;
+}

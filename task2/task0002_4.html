@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task0002_4</title>
+	<style>
+	.container{
+		width: 300px;
+		height: 200px;
+		border: 1px solid #333;
+		margin: 0 auto;
+		margin-top: 10px;
+	}
+	.container input{
+		width: 200px;
+		margin:20px 20px 0px 20px;
+		outline: none;
+		/*border-bottom: 0;*/
+		color: #0B333C;
+	}
+	ol{
+		list-style: none;
+		width: 250px;
+		margin-left: 20px;
+		margin-top: 0px;
+		padding:0;
+		border: 1px solid #BBB;
+		display: none;
+		position: relative;
+		top: -1px;
+	}
+	li{
+		color: #0B333C;
+		/*background: #CCC;*/
+	}
+	li span {
+		color: red;
+	}
+	</style>
+</head>
+<body>
+	<h2 style="width:150px; margin: 0 auto; margin-top:50px;">输入提示框</h2>
+	<div class="container">
+		<input type="text" id="inputs">
+		<ol id="test">
+		</ol>
+	</div>
+	<p style="margin-left: 150px;">假设有以下数据可检索：</p>
+	<p style="margin-left: 150px;">database = ['text', 'text12', 'text123', 'texthaha', 'textlala', 
+				'apple', 'apple6', 'apple6 plus',
+				'Erik', 'Erik127', 'Simon', 'Kener'];</p>
+	<script src="js/util.js"></script>
+	<script src="js/task0002_4.js"></script>
+</body>
+</html>
