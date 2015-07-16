@@ -34,7 +34,7 @@
 .art-content{
 	font-size: 12px;
 	line-height: 1.5;
-	text-indent: 2em;
+	text-align: right;
 }
 
 /*三列等高*/
@@ -82,10 +82,10 @@
 }
 .headimg img{
 	width: 160px;
-	height: 215px;
+	height: 160px;
 }
 .intro-wrap h1{
-	font-family: Century Gothic;
+	font-family: Century Gothic '微软雅黑';
 	font-size: 20px;
 	text-align: center;
 }
@@ -95,5 +95,9 @@
 	margin-top: 50px;
 	font-size: 14px;
 	line-height: 1.7;
-	text-indent: 2em;
+	/*text-indent: 2em;*/
+	text-align: center;
+}
+.self-intro p{
+	line-height: 2.0;
 }

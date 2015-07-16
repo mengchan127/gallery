@@ -41,11 +41,12 @@ cursor: pointer;
 	width: 980px;
 	margin: 0 auto;
 }
-.topnav h1{
-	color: #FFF;
-	font-family: Arial;
-	margin-top: 15px;
+.logo{
+	width: 138px;
+	height: 70px;
+	margin-top: 8px;
 	float: left;
+	background: url(../img/logo.png);
 }
 .topnav ul{
 	float: right; 

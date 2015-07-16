@@ -101,7 +101,7 @@ function play (order, interval) {
 	}
 	timer = setTimeout(function () {
 		// 向右滑动
-		if (order === 'right') {
+		if (order == 'right') {
 			prev.onclick();
 		}
 		// 向左滑动
@@ -117,4 +117,4 @@ function stop () {
 
 container.onmouseover = stop;
 container.onmouseout = play;
-window.onload = play;
+window.onload = play();

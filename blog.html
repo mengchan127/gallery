@@ -13,9 +13,9 @@
 		<div class="header">
 			<a href="https://github.com/" target="_blank"><div id="github-icon"></div></a>
 			<div class="topnav">
-				<h1>YourLOGO</h1>
+				<div class="logo"></div>
 				<ul>
-					<li><a href="other.html" style="font-size: 20px;"><strong>其他任务展示</strong></a></li>
+					<li><a href="other.html" style="font-size: 20px;"><strong>其他作品展示</strong></a></li>
 					<li><a href="index.html">首页</a></li>
 					<li><a href="blog.html">文章</a></li>
 					<li><a href="gallery.html">作品</a></li>
@@ -32,25 +32,26 @@
 					<!-- 侧标签 -->
 					<div class="labels-wrap">
 						<div class="labels" style="background:#522A5C"><span>4.12</span></div>
-						<div class="labels" style="background:#A660B7"><span>CSS</span></div>
+						<div class="labels" style="background:#A660B7"><span>JS</span></div>
 					</div>
 					<!-- blog title -->
-					<h3>这里是这篇文章的标题，16px</h3>
-					<h4>这里是这篇文章的副标题，12px，#666</h4>
+					<h3>JavaScript原型</h3>
+					<h4>学习笔记</h4>
 					<!-- blog content -->
 					<div>
-						<p>这里是正文，这里是正文这里是正文，这里是正文这里是正文，这里是正文这里是正文，这里是正文这里是正文这里是正文这里是正文这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，</p>
-						<p>这里是正文，这里是正文，这里是正文，这里是正文这里是正文，这里是正文这里是正文，这里是正文这里是正文这里是正文这里是正文这里是正文，这里是正文，这里是正文，</p>
-						<p>这里是正文，这里是正文，这里是正文，这里是正文这里是正文，这里是正文这里是正文，这里是正文这里是正文这里是正文这里是正文这里是正文，这里是正文，这里是正文，</p>
-						<p>这里是正文，这里是正文，这里是正文，这里是正文这里是正文，这里是正文这里是正文，这里是正文这里是正文这里是正文这里是正文这里是正文，这里是正文，这里是正文，</p>
-						<p>这里是正文，这里是正文，这里是正文，这里是正文这里是正文，这里是正文这里是正文，这里是正文这里是正文这里是正文这里是正文这里是正文，这里是正文，这里是正文，这里是正文，</p>
-						<p>这里是正文，这里是正文，这里是正文，这里是正文这里是正文，这里是正文这里是正文，这里是正文这里是正文这里是正文这里是正文这里是正文，这里是正文，这里是正文，</p>
-						<p>这里是正文，这里是正文，这里是正文，这里是正文这里是正文，这里是正文这里是正文，这里是正文这里是正文这里是正文这里是正文这里是正文，这里是正文，这里是正文，</p>
-						<p>这里是正文，这里是正文，这里是正文，这里是正文这里是正文，这里是正文这里是正文，这里是正文这里是正文这里是正文这里是正文这里是正文，这里是正文，这里是正文，</p>
-						<p>这里是正文，这里是正文，这里是正文，这里是正文这里是正文，这里是正文这里是正文，这里是正文这里是正文这里是正文这里是正文这里是正文，这里是正文，这里是正文，这里是正文，</p>
+						<p>今天研究了一下js的原型，把自己的理解写到这里，如有不正确的地方，还望指出，在此先谢过啦~</p>
+						<p><strong>什么是原型？</strong></p>
+						<p>原型是一个对象。所有对象都有原型。任何一个对象也都可以成为其他对象的原型。每个原型都有一个constructor属性指向其构造函数。</p>
+						<p><strong>怎么访问原型？</strong></p>
+						<p>一个对象的原型被对象内部的[[Prototype]]属性所持有。</p>
+						<p>一句话就是，所有对象都有原型，其原型是该对象的内部属性。那么有哪些方法可以访问到这个内部属性呢？</p>
+						<p>· ECMAScript 5 增加了方法 Object.getPrototypeOf() ，用于返回对象 [[Prototype]] 的值。IE 9+、Firefox 3.5+、Safari 5+、Opera 12+ 和 Chrome 都实现了该方法。 </p>
+						<p>· 除了IE，其他浏览器都支持非标准的访问器 __proto__</p>
+						<p>· 如果这两者都不起作用，我们就需要通过对象的构造函数找它的原型属性了。</p>
+						<a href="http://segmentfault.com/a/1190000002867132" target="_blank">更多内容此访问</a>
 					</div>
 					<div class="edit-info">
-						<span>Sally 发表于 2015年4月12日</span>
+						<span>梦禅 发表于 2015年4月12日</span>
 					</div>
 				</div>
 				
@@ -58,17 +59,21 @@
 					<!-- 侧标签 -->
 					<div class="labels-wrap">
 						<div class="labels" style="background:#522A5C"><span>4.12</span></div>
-						<div class="labels" style="background:#A660B7"><span>CSS</span></div>
+						<div class="labels" style="background:#A660B7"><span>JS</span></div>
 					</div>
 					<!-- blog title -->
-					<h3>这里是这篇文章的标题，16px</h3>
-					<h4>这里是这篇文章的副标题，12px，#666</h4>
+					<h3>JavaScript作用域链</h3>
+					<h4>学习笔记</h4>
 					<!-- blog content -->
 					<div>
-						<p>这里是正文，这里是正文这里是正文，这里是正文这里是正文，这里是正文这里是正文，这里是正文这里是正文这里是正文这里是正文这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，</p>
+						<p><strong>1.几个概念</strong></p>
+						<p>先说几个概念：函数、执行环境、变量对象、作用域链、活动对象。这几个东东之间有什么关系呢，往下看~</p>
+						<p><strong>函数</strong></p>
+						<p>函数大家都知道，我想说的是，js中，在函数内部有两个特殊的对象：arguments和this。arguments是一个类数组对象，包含着传入函数中的所有参数。this 引用的是函数据以执行的环境对象。</p>
+						<a href="http://segmentfault.com/a/1190000002792608" target="_blank">更多内容此访问</a>
 					</div>
 					<div class="edit-info">
-						<span>Sally 发表于 2015年4月12日</span>
+						<span>梦禅 发表于 2015年4月12日</span>
 					</div>
 				</div>
 
@@ -76,17 +81,20 @@
 					<!-- 侧标签 -->
 					<div class="labels-wrap">
 						<div class="labels" style="background:#522A5C"><span>4.12</span></div>
-						<div class="labels" style="background:#A660B7"><span>CSS</span></div>
+						<div class="labels" style="background:#A660B7"><span>JS</span></div>
 					</div>
 					<!-- blog title -->
-					<h3>这里是这篇文章的标题，16px</h3>
-					<h4>这里是这篇文章的副标题，12px，#666</h4>
+					<h3>JavaScript中的 this</h3>
+					<h4>学习笔记</h4>
 					<!-- blog content -->
 					<div>
-						<p>这里是正文，这里是正文这里是正文，这里是正文这里是正文，这里是正文这里是正文，这里是正文这里是正文这里是正文这里是正文这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，</p>
+						<p><strong>this简述</strong></p>
+						<p>每个函数在被调用时都会自动取得两个特殊的对象：this 和 arguments，arguments 是一个类数组对象，包含着传入函数中的所有参数， this 引用的是函数据以执行的环境对象。</p>
+						<p>this 对象是在运行时基于函数的执行环境绑定的，它可能是全局对象或者其他的某个对象，随着函数的执行环境不同，this的值也会不一样。但是总有一个原则，那就是“this 指的是 调用函数的 那个对象”。</p>
+						<a href="http://segmentfault.com/a/1190000002968751" target="_blank">更多内容此访问</a>
 					</div>
 					<div class="edit-info">
-						<span>Sally 发表于 2015年4月12日</span>
+						<span>梦禅 发表于 2015年4月12日</span>
 					</div>
 				</div>
 
