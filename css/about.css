@@ -40,6 +40,7 @@
 	border-right: 0;
 	font-size: 14px;
 	position: relative;
+	font-family: arial;
 }
 .details p{ line-height: 1.8; }
 .other-image{
