@@ -41,23 +41,7 @@ input.onkeyup = function (e) {
 
 	lis = ol.getElementsByTagName('li');
 	len = lis.length;
-	// 这种实现鼠标和上下键不统一
-	// for (var i = 0; i < len; i++) {
-	// 	// 绑定鼠标事件
-	// 	lis[i].onmouseover = function () {
-	// 		this.style.background = '#CCC';
-	// 	}
-	// 	lis[i].onmouseout = function () {
-	// 		this.style.background = '#FFF';
-	// 	}
-	// 	lis[i].onclick = function () {
-	// 		var val = this.innerHTML;
-	// 		val = val.replace('<span>', '');
-	// 		val = val.replace('</span>', '');
-	// 		input.value = val;
-	// 		ol.style.display = 'none';
-	// 	}		
-	// }
+	
 	for (var i = 0; i < len; i++) {
 		(function (j) {
 			lis[j].onmouseover = function () {
@@ -67,10 +51,10 @@ input.onkeyup = function (e) {
 				}
 				index = j;
 			}
-			lis[i].onmouseout = function () {
-				this.style.background = '#FFF';
-			}
-			lis[i].onclick = function () {
+			//lis[i].onmouseout = function () {
+			//	this.style.background = '#FFF';
+			//}
+			lis[j].onclick = function () {
 				var val = this.innerHTML;
 				val = val.replace('<span>', '');
 				val = val.replace('</span>', '');
